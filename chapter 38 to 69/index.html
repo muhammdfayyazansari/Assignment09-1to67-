@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+</head>
+<style>
+body{
+    background-color: rgba(0, 0, 0, 0.822);
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 17px;
+}
+.allimage{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    
+}
+.overlay{
+    background: rgba(0,0,0,0.5);
+}
+    .modal{
+        display: none;
+        position: fixed;
+        left: 0em;
+        top: 0em;
+        z-index: 1;
+        height: 100%;
+        width: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+    .modal-content{
+        margin: 3% auto;
+        width: 70%;
+        height: 85%;
+        background-color: #f4f4f4;
+        box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+    }
+    .closebtn{
+        color: #fff;
+        float: right;
+        z-index: 1;
+        font-size: 17px;
+        margin: 0px;
+        padding: 0px 10px;
+        background-color: #838383;
+    }
+    .closebtn:hover,.closebtn:focus{
+        color:#000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <br>
+    <div class="allimage overlay" >
+        <img src="./New folder/1.jpg" onclick="Openmodal('New folder/1.jpg')" width="23%" alt="">
+        <img src="./New folder/3.jpg" onclick="Openmodal('New folder/3.jpg')" width="23%" alt="">
+        <img src="./New folder/4.png" onclick="Openmodal('New folder/4.png')" width="23%" alt="">
+        <img src="./New folder/5.jpg" onclick="Openmodal('New folder/5.jpg')" width="23%" alt="">
+    </div>
+    <br />
+    <div class="allimage overlay" >
+        <img src="./New folder/6.jpg" onclick="Openmodal('New folder/6.jpg')" width="23%" alt="">
+        <img src="./New folder/7.png" onclick="Openmodal('New folder/7.png')" width="23%" alt="">
+        <img src="./New folder/8.jpg" onclick="Openmodal('New folder/8.jpg')" width="23%" alt="">
+        <img src="./New folder/9.jpg" onclick="Openmodal('New folder/9.jpg')" width="23%" alt="">
+    </div>
+    <br />
+    <div class="allimage overlay" >
+        <img src="./New folder/10.jpg" onclick="Openmodal('New folder/10.jpg')" width="23%" alt="">
+        <img src="./New folder/11.jpg" onclick="Openmodal('New folder/11.jpg')" width="23%" alt="">
+        <img src="./New folder/12.jpg" onclick="Openmodal('New folder/12.jpg')" width="23%" alt="">
+        <img src="./New folder/13.jpg" onclick="Openmodal('New folder/13.jpg')" width="23%" alt="">
+    </div>
+    <br />
+    <div class="allimage overlay" >
+        <img src="./New folder/14.png" onclick="Openmodal('New folder/14.png')" width="23%" alt="">
+        <img src="./New folder/15.jpg" onclick="Openmodal('New folder/15.jpg')" width="23%" alt="">
+        <img src="./New folder/7.png" onclick="Openmodal('New folder/7.png')" width="23%" alt="">
+        <img src="./New folder/2.jpg" onclick="Openmodal('./New folder/2.jpg')" width="23%" height="300px" alt="">
+       
+    </div>
+    <br />
+    <div class="modal" id="modal">
+        <div class="modal-content"> 
+            <span class="closebtn"  onclick="closemodal()">&times;</span>
+        <img id="image" width="100%" height="100%" style="position: relative; top: 0em;" src=""  alt="">
+        </div>
+    </div>
+  <script>
+      function Openmodal(a){
+        var modal = document.getElementById("modal");
+        var image = document.getElementById("image")
+          var main = document.getElementsByTagName("img");
+          image.src = a;
+          modal.style.display ="block";
+          
+      }
+      function closemodal(){
+          var modal = document.getElementById("modal");
+          modal.style.display ="none"
+          
+      }
+  </script>
+</body>
+
+</html>

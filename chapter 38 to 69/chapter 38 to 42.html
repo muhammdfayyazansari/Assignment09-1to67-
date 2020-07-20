@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 38 TO 42</title>
+</head>
+<body>
+    
+</body>
+<script>
+// ********************************************* CHAPTER 38 TO 42**********************************
+// // **********************************************QUESTION NO 01
+//     var b = +prompt("Enter Power of 5 for calculation");
+    // var c = 1;
+    // var a = 5;
+    // function Power(){
+    //     while (c<b){
+    //        a = a* 5;
+    //         c++
+    //     }
+    // document.write("The Result of "+5+"<sup>"+b+"</sup> is "+ a + "<br>")
+
+    // }
+    // Power();
+
+
+// // **********************************************QUESTION NO 02
+// function Leap (){
+//     var user = +prompt("Enter a year for cheching it's leap or not");
+// var a = user%2;
+// switch (a){
+//     case 0: 
+//     document.write(user + " is a leap year.")
+//     break;
+//     default:
+//     alert(user +" is not a leap year")
+// }
+// }
+// Leap()
+
+// // **********************************************QUESTION NO 03
+// //area = S(S − a)(S − b)(S − c)
+// // where, S = ( a + b + c ) / 2
+// function Main(){
+//     var a= 5;
+//     var b= 7;
+//     var c= 10;
+//     var S;
+//     function inner(){
+//     S = (a+b+c)/2;
+//     console.log(S)
+// }
+//     inner()
+//     var area = S * (S-a)*(S - b)*(S - c);
+//     document.write("Side a = 5; <br> Side b = 7; <br> Side c = 10;<br>The Area of Triangle is " + area)
+// }
+// Main();
+
+// // **********************************************QUESTION NO 04
+// function mainFunction(){
+//     var m = +prompt("Enter Math marks");
+//     var p = +prompt("Enter Physics marks");
+//     var c = +prompt("Enter Chemistry marks");
+//     var obtained = m+p+c;
+//     document.write("<h1>Marks Sheet of Muhammad Fayyaz </h1>")
+//     function average(){
+//         var average = (m+p+c)/2;
+//         return document.write("Math =" +m+" <br> Physics = "+p +"<br> Chemistry = "+c +" <br>Obtained Marks =  "+ obtained +"<br>Total Marks = 300" +"<br>Average Marks is "+average)
+//     }
+//     var ave = average();
+//     function Percentage(){
+//         var percentage  =(m+p+c)/300*100; 
+//         return document.write("<br>Percentage is "+percentage+"%")
+//     }
+//     var per = Percentage();
+// }
+// mainFunction();
+
+// // **********************************************QUESTION NO 05
+// function Indexfind(){
+//     var input = prompt("Enter a letter");
+// var name = "muhammadfayyaz";
+// for (var i= 0; i<=name.length; i++){
+//     var sel = name.charAt(i) 
+//     switch (true) {
+//         case (input == sel) :
+//         document.write("Your character "+input+" on my senctence at index = "+i)
+//         var i = name.length;
+//         break;
+//         case (i == name.length):
+//         console.log("-1")
+//     }
+// } 
+// }
+// Indexfind()
+
+// // **********************************************QUESTION NO 06
+// function vowel(){
+//     var user = prompt("Enter a sentence");
+//     var name = user.toLowerCase();
+//     var a = 0;
+//     while(a<=name.length){
+//     switch (a){
+//         case 0 :
+//         name = name.replace(/a/g,"")
+//         case 1 :
+//         name = name.replace(/e/g,"")
+//         case 2 :
+//         name = name.replace(/i/g,"")
+//         case 3 :
+//         name = name.replace(/o/g,"")
+//         default :
+//         name = name.replace(/u/g,"")}a++  }
+//     document.write("User Sentence : "+user + "<br> After delete vowel from sentence: "+ name)
+// }
+// vowel()
+
+
+// // **********************************************QUESTION NO 07
+// function Occurance(){
+// var sentence = "Pleases read this application and give me gratuity";
+// var z = 0;
+// for(var i=0; i<=sentence.length; i++){
+//     var a = sentence.charAt(i);
+//     var b = sentence.charAt(i+1);
+//     var c = a+b;
+//     switch(c){
+//         case "ea":
+//         z++;
+//     }
+// }
+
+// document.write("Sentence is : "+ sentence+"<br>Number of Occurances of 'ea' in above sentence is: "+z)
+// }
+// Occurance()
+
+// // **********************************************QUESTION NO 08
+// function main(){
+// var userInput = +prompt("Enter distance between two cities in Kilometer");
+//     function meter(){
+//         var convert = userInput*1000;
+//         document.write("Distance in kilometer: "+ userInput)
+//         document.write("<br>Distance in Meter: "+ convert)
+//     }
+//     meter()
+//     function feet(){
+//         var convert =Math.round(userInput*3280.84);
+//         document.write("<br>Distance in Feet: "+ convert)
+//    }
+//    feet()
+//    function inch(){
+//        var convert = Math.round(userInput*39370.1);
+//        document.write("<br>Distance in Inches : "+ convert)
+//    }
+//    inch()
+//    function centimeter(){
+//        var convert = Math.round(userInput*100000.054)
+//        document.write("<br>Distance in centimeter : "+convert)
+//    }
+//    centimeter()
+// }
+// main()
+
+// // **********************************************QUESTION NO 09
+// SIR QUESTION TO ASAN HAI LEKIN IS QUESTION ME EMPLOY KI WORK TIMING KESAY GET KARNI HAI OR IS KAY ILAWA OR 
+// BOHOT SE QUESTION HAI JO IS ME SAMAJH NAHI ARAHAI 
+
+
+
+
+// // **********************************************QUESTION NO 10
+// var withdraw = +prompt("Enter amount to withdraw at least 100 Rupees");
+// var hundred = Math.floor(withdraw/100);
+// var fifty = Math.floor((withdraw%100)/50);
+// var ten = Math.floor(((withdraw%100)%50)/10);
+// var rem = Math.floor((((withdraw%100)%50)/10)%10);
+// switch (true){
+//     case (withdraw>=100):
+//     document.write("Your amount is "+ withdraw +" Rupees<br>You will have "+hundred+" hundred notes "+fifty + " fifty notes "+ten+" ten notes "+" and remaining "+rem+" Rupees");
+//     break;
+//     default :
+//     alert("You Only able to withdraw amount if you enter upto and equal to 100 Rupees")
+
+// }
+
+
+
+</script>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>49 to 52</title>
+</head>
+
+<body><!--********************************************************************************************************************************************
+    //-->
+    <!-- **********************************************QUESTION NO 01 -->
+
+    <!-- <fieldset style="margin: 20px auto; text-align: center;">
+            <legend>
+                <h1>Sign-up</h1>
+            </legend>
+            <label for="email">NAME: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input style="margin: 20px; padding: 5px; 
+                font-size: larger;" size="30" type="text" name="name" id="name">
+            </label><br />
+            <label for="email">EMAIL: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input style="margin: 20px; padding: 5px; 
+                font-size: larger;" size="30" type="text" name="email" id="email">
+            </label><br />
+            <label for="password">PASSWORD:
+                <input type="password" size="30" id="password" style="margin: 20px; padding: 5px; font-size: larger;">
+            </label><br>
+            <label for="submit"><button type="submit"
+                    style="color: #fff; border: none; background-color: darkblue; padding: 10px 20px; margin: 20px;"
+                    id="submit" onclick="mainfunc1()">Sign-up</button></label>
+        </fieldset>
+
+    <table id="table" style="margin: 20px auto;" cellspacing="20px" cellpadding="20px 100px">
+        <tr>
+            <td>S.NO</td>
+            <td>NAME</td>
+            <td>EMAIL</td>
+        </tr>
+    </table> -->
+
+
+    <!-- **********************************************QUESTION NO 02 -->
+    <!-- <div style="text-align:left; margin: 20px auto">
+        <p > Suppose in your webpage there is content area in which
+            you have entered your item details, but user can only see
+            some details on first look. <a href="#" id="anchor" onclick="visible()">Read More</a> <span id="visible" style="visibility: hidden;"> user clicks on “Read
+            more” button, full detail of that particular item will be
+            displayed</span>
+        </p>
+    </div> -->
+
+    <!-- **********************************************QUESTION NO 03 -->
+<!--     
+    <fieldset style="margin: 20px auto; text-align: center;">
+        <legend>
+            <h1>Sign-up</h1>
+        </legend>
+        <label for="email">NAME: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input placeholder="Name" style="margin: 20px; padding: 5px; 
+                font-size: larger;" size="30" type="text" name="name" id="name">
+        </label><br />
+        <label for="email">EMAIL: &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <input placeholder="email" style="margin: 20px; padding: 5px; 
+                font-size: larger;" size="30" type="text" name="email" id="email">
+        </label><br />
+        <label for="password">PASSWORD:
+            <input type="password" size="30" id="password" placeholder="password"
+                style="margin: 20px; padding: 5px; font-size: larger;">
+        </label><br>
+        <label for="submit"><button
+                style="color: #fff; font-size: larger; border: none; background-color: #382898; padding: 10px 20px; margin: 20px;"
+                id="submit" onclick="khali(),mainfunc()">Sign-up</button></label>
+    </fieldset>
+    
+    <table id="table" style="margin: 20px auto;" cellspacing="5px" cellpadding="5px 100px">
+        <tr>
+            <td>S.NO</td>
+            <td>NAME</td>
+            <td>EMAIL</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table> -->
+
+</body>
+
+<script>
+    //     // **********************************************QUESTION NO 01
+    //   var b = 0;
+    //     function mainfunc1(){
+    //         var getitem = document.getElementById("table");
+    //         var name = document.getElementById("name").value;
+    //         var email = document.getElementById("email").value;
+    //          var row = getitem.insertRow(-1);        
+    //         row.insertCell(0).textContent = b++;
+    //         row.insertCell(1).textContent = name;
+    //         row.insertCell(2).textContent = email;
+    //         function empty(){
+    //             var get = document.getElementById("name");
+    //             var get1 = document.getElementById("email");
+    //             var get2 = document.getElementById("password");
+    //             get.value = "";
+    //             get1.value = "";
+    //             get2.value = "";
+    //        }
+    //         empty()
+    //     }
+
+    //     // **********************************************QUESTION NO 02
+    // function visible(){
+    //     var target = document.getElementById("visible");
+    //     target.style.visibility ="visible";
+    //     function ancor (){
+    //         var get = document.getElementById("anchor");
+    //     get.style.visibility = "hidden";
+    //     }
+    //    ancor()
+    // }
+
+
+
+
+    //     // **********************************************QUESTION NO 03
+    // var a = 0;
+    // function khali() {
+    //     var name = document.getElementById("name").value;
+    //     var email = document.getElementById("email").value;
+    //     var password = document.getElementById("password").value;
+    //     switch (true) {
+    //         case (name == false):
+    //             alert("Name is required field")
+    //             document.getElementById("submit").disabled = false;
+    //             document.getElementById("submit").mainfunc() = false;
+    //             break;
+    //         case (email == false):
+    //             alert("Email is required field")
+    //             document.getElementById("submit").disabled = false;
+    //             document.getElementById("submit").mainfunc() = false;
+    //             break
+    //         case (password == false):
+    //             alert("Password is required field ")
+    //             document.getElementById("submit").disabled = false;
+    //             document.getElementById("submit").mainfunc() = false;
+    //             break
+    //     }
+
+    // }
+    // function mainfunc() {
+    //     var getitem = document.getElementById("table");
+    //     var name = document.getElementById("name").value;
+    //     var email = document.getElementById("email").value;
+    //     var row = getitem.insertRow(-1);
+    //     row.insertCell(0).textContent = a++;
+    //     row.insertCell(1).textContent = name;
+    //     row.insertCell(2).textContent = email;
+    //     row.insertCell(3).innerHTML = "<button onclick='deletfunc()' style='padding:5px 10px;'>Delete</button>"
+    //     row.insertCell(4).innerHTML = "<button onclick='editfunc()' style='padding:5px 20px;'>Edit</button>"
+
+    //     function empty() {
+    //         var get = document.getElementById("name");
+    //         var get1 = document.getElementById("email");
+    //         var get2 = document.getElementById("password");
+    //         get.value = "";
+    //         get1.value = "";
+    //         get2.value = "";
+    //     }
+    //     empty()
+    // }
+
+    // function deletfunc() {
+    //     var main = document.getElementById("table");
+    //     for (var i = 0; i <= main.rows.length; i++) {
+    //         table.rows[i].cells[3].onclick = function () {
+    //             index = i - 1;
+    //             table.deleteRow(index)
+    //         }
+
+
+    //     }
+
+    // }
+    // function editfunc() {
+    //     // ******** Get Information of user for edit
+    //     var edit1 = prompt("Enter your Name");
+    //     if (edit1 == "") {
+    //         alert("Name is required field")
+    //         editfunc() == false;
+    //     }
+    //     var edit2 = prompt("Enter your email address");
+    //     if (edit2 == "") {
+    //         alert("Email is required field")
+    //         var edit2 = prompt("Enter your email address")
+    //         if (edit2 == "") {
+    //             alert("Email is required field")
+    //             editfunc() == false;
+    //         }
+    //     }
+    //     var edit3 = prompt("Creat a password");
+    //     if (edit3 == false) {
+    //         alert("Password is required field")
+    //         var edit3 = prompt("Password is required field")
+    //         if (edit3 == "") {
+    //             alert("Password is required field")
+    //             editfunc() == false;
+    //         }
+    //     }
+    //     var table = document.getElementById("table");
+    //     for (var i = 1; i < table.rows.length; i++) {
+    //         table.rows[i].cells[4].onclick = function () {
+    //             table.rows[i - 1].cells[1].innerHTML = edit1;
+    //             table.rows[i - 1].cells[2].innerHTML = edit2;
+    //         }
+    //     }
+
+    // }
+</script>
+
+</html>
